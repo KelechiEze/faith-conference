@@ -11,7 +11,6 @@ const FaithVerse = () => {
         things are possible to him that believeth.&rdquo;
       </h2>
       <p className="faith-reference">Mark 9:23</p>
-      <button className="faith-button">Break Through All Obstacles With Faith</button>
     </div>
   );
 };

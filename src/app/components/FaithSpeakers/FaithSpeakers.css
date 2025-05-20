@@ -82,7 +82,7 @@
 }
 
 .register-button {
-  background-color: #FFC72C;
+  background-color: #fdd835;
   border: none;
   color: #0b0b33;
   font-weight: bold;
@@ -118,7 +118,7 @@
   }
 }
 
-/* ===== Modal Overlay Styles ===== */
+/* ===== Modal Overlay ===== */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -130,13 +130,15 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  overflow-y: auto; /* Enable scroll if content is tall */
+  padding: 20px; /* Adds space on small screens */
 }
 
-/* ===== Modal Content Styles ===== */
+/* ===== Modal Content ===== */
 .modal-content {
   background: white;
   max-width: 700px;
-  width: 90%;
+  width: 100%;
   border-radius: 10px;
   padding: 30px;
   position: relative;
@@ -146,8 +148,12 @@
   animation: fadeInModal 0.4s ease forwards;
   transform-origin: center;
   opacity: 0;
+  max-height: 90vh; /* Limits height on small screens */
+  overflow-y: auto; /* Enables internal scrolling */
+  box-sizing: border-box;
 }
 
+/* ===== Modal Close Button ===== */
 .modal-close {
   position: absolute;
   top: 15px;
@@ -159,6 +165,7 @@
   color: #0b0b33;
 }
 
+/* ===== Modal Title ===== */
 .modal-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -167,38 +174,72 @@
   text-align: center;
 }
 
+/* ===== Modal Body ===== */
 .modal-body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: left;
+  text-align: center;
 }
 
+/* ===== Speaker Image ===== */
 .modal-image {
   width: 180px;
-  height: 220px;
+  height: auto;
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 20px;
 }
 
+/* ===== Speaker Bio ===== */
 .modal-bio {
   font-size: 1rem;
   color: #333;
-  line-height: 1.5;
+  line-height: 1.6;
   max-width: 450px;
+  padding: 0 10px;
 }
 
-/* ===== Responsive Modal Layout ===== */
+/* ===== Responsive Adjustments for Tablets and Up ===== */
 @media (min-width: 600px) {
   .modal-body {
     flex-direction: row;
     gap: 30px;
-    text-align: left;
     align-items: flex-start;
+    text-align: left;
   }
 
   .modal-image {
     margin-bottom: 0;
+  }
+
+  .modal-bio {
+    padding: 0;
+  }
+}
+
+/* ===== Responsive Adjustments for Mobile Screens ===== */
+@media (max-width: 599px) {
+  .modal-content {
+    padding: 20px;
+  }
+
+  .modal-image {
+    width: 160px;
+    height: auto;
+  }
+
+  .modal-close {
+    top: 10px;
+    right: 10px;
+    font-size: 1.25rem;
+  }
+
+  .modal-title {
+    font-size: 1.3rem;
+  }
+
+  .modal-bio {
+    font-size: 0.95rem;
   }
 }

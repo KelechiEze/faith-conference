@@ -95,7 +95,7 @@ const HomeSection = () => {
       <div className="overlay">
         <div className="hero-content">
           <h1>Faith Conference 2025</h1>
-          <p className="tagline"><em>&ldquo;Changing Your World!&rdquo;</em></p>
+          <h2 className="tagline"><em>&ldquo;Changing Your World!&rdquo;</em></h2>
 
           <div className="info">
             <span><Calendar size={18} /> May 23–25, 2025</span>

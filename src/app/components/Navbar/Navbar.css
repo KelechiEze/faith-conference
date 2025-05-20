@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.2rem 2rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -72,30 +72,58 @@
 }
 
 @media screen and (max-width: 800px) {
-  .hamburger {
-    display: block;
+  .navbar {
+    justify-content: space-between;
   }
 
-  .logo-image {
-    width: 80px;
-    height: auto;
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
   }
 
   .nav-links {
-    display: none;
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: 80px;
     left: 0;
     width: 100%;
     background-color: #000000cc;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     gap: 1.5rem;
     z-index: 9;
+
+    /* Transition setup */
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
   }
 
   .nav-links.active {
-    display: flex;
+    max-height: 500px; /* adjust as needed */
+    opacity: 1;
+    visibility: visible;
+    padding: 1rem 2rem; /* restore padding when visible */
+  }
+
+  .nav-links li {
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: slideIn 0.3s forwards;
+    animation-delay: 0.2s;
+  }
+
+  .nav-links.active li {
+    animation: slideIn 0.3s forwards;
+  }
+
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .nav-btn {
