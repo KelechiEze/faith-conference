@@ -18,7 +18,6 @@ const FaithSupportSection = () => {
           <Gift size={18} style={{ marginRight: '8px' }} />
           Give now
         </button></Link>
-        <small>You will be redirected to the Global Harvest Church giving page</small>
       </div>
 
       <footer className="footer">
