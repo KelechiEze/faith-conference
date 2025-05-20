@@ -105,14 +105,16 @@ const HomeSection = () => {
 
           <div className="hero-buttons">
             <Link href="#register"><button className="btn-register">Register Now</button></Link>
-            <button className="btn-schedule" onClick={() => setIsModalOpen(true)}>
+            <button className="btn-schedule" disabled style={{ opacity: 0.5, cursor: 'not-allowed' }}>
               View Schedule
             </button>
           </div>
         </div>
       </div>
 
-      {isModalOpen && (
+      {/* Schedule modal is no longer active since button is disabled */}
+      {/* You can re-enable this block in the future if needed */}
+      {false && isModalOpen && (
         <div className="modal-overlay">
           <div className="modal">
             <button className="close-button" onClick={() => setIsModalOpen(false)}>
