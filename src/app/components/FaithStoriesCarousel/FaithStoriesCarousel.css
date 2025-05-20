@@ -1,0 +1,120 @@
+.faith-carousel {
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 100px;
+  margin-bottom: 170px;
+}
+
+.carousel-title {
+  font-size: 2rem;
+  color: #0c1033;
+  font-weight: bold;
+}
+
+.carousel-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.carousel-underline {
+  width: 50px;
+  height: 4px;
+  background-color: #fdbb2d;
+  margin: 1rem auto 2rem;
+  border-radius: 999px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-card {
+  flex: 0 0 100%;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+@media (min-width: 768px) {
+  .carousel-card {
+    flex: 0 0 33%;
+  }
+}
+
+.carousel-text {
+  font-style: italic;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.carousel-author {
+  text-align: right;
+  color: #0c1033;
+  font-weight: 600;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s;
+}
+
+.arrow:hover {
+  background-color: #e0eaff;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.carousel-cta {
+  margin-top: 3rem;
+  color: #0c1033;
+  font-weight: 600;
+}
+
+.share-button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background-color: #0c1033;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.share-button:hover {
+  background-color: #1a245e;
+}

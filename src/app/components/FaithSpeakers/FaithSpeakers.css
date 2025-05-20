@@ -1,0 +1,204 @@
+.speakers-section {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Georgia', serif;
+  color: #0b0b33;
+}
+
+.speakers-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.speakers-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.speakers-subtitle::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #fdd835;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.speakers-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px 40px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.speaker-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.speaker-name:hover {
+  color: #f6c744;
+}
+
+.speaker-bio {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.connect-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: #0b0b33;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #fdd835;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+  top: -1px;
+}
+
+.register-button {
+  background-color: #fdd835;
+  border: none;
+  color: #0b0b33;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #fbc02d;
+}
+
+/* ===== Modal Animation Keyframes ===== */
+@keyframes fadeInModal {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInOverlay {
+  0% {
+    background-color: rgba(11, 11, 51, 0);
+  }
+  100% {
+    background-color: rgba(11, 11, 51, 0.7);
+  }
+}
+
+/* ===== Modal Overlay Styles ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: fadeInOverlay 0.3s ease forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* ===== Modal Content Styles ===== */
+.modal-content {
+  background: white;
+  max-width: 700px;
+  width: 90%;
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInModal 0.4s ease forwards;
+  transform-origin: center;
+  opacity: 0;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0b0b33;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0b0b33;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.modal-image {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.modal-bio {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  max-width: 450px;
+}
+
+/* ===== Responsive Modal Layout ===== */
+@media (min-width: 600px) {
+  .modal-body {
+    flex-direction: row;
+    gap: 30px;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .modal-image {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,75 @@
+.faith-container {
+  background-image: url('/forestgump.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  position: relative;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Georgia', serif;
+  z-index: 1;
+}
+
+/* Dark grey overlay for text readability */
+.faith-container::before {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(60, 60, 60, 0.5); /* slightly dark grey */
+  z-index: 0;
+}
+
+.faith-quote,
+.faith-reference,
+.faith-button {
+  position: relative;
+  z-index: 2;
+}
+
+.faith-quote {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.faith-reference {
+  color: #fdd835;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.faith-button {
+  background-color: #fdd835;
+  color: #2e2e2e;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faith-button:hover {
+  background-color: #fbc02d;
+}
+
+@media (max-width: 768px) {
+  .faith-quote {
+    font-size: 1.2rem;
+  }
+
+  .faith-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}

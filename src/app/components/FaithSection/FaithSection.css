@@ -1,0 +1,85 @@
+.faith-section {
+  padding: 2rem 1rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.faith-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0d1440;
+  margin-bottom: 2rem;
+}
+
+.faith-title span {
+  color: #0d1440;
+}
+
+.faith-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.faith-card {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  max-width: 300px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.quote-mark {
+  font-size: 2rem;
+  color: #ccc;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.faith-verse {
+  color: #0d1440;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.faith-ref {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #0d1440;
+}
+
+.faith-description {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 800px) {
+  .faith-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faith-card {
+    width: 90%;
+  }
+
+  .faith-title {
+    font-size: 1.8rem;
+  }
+
+  .faith-description {
+    padding: 0 1rem;
+    font-size: 0.95rem;
+  }
+}

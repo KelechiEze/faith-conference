@@ -1,0 +1,145 @@
+.faithSupportWrapper {
+  background-color: #0d0d40;
+  color: #ffffff;
+  padding: 80px 20px 40px;
+  text-align: center;
+}
+
+.supportContent h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.supportContent p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
+}
+
+.underline {
+  width: 40px;
+  height: 3px;
+  background-color: #f3c766;
+  margin: 0 auto 1.5rem;
+}
+
+.giveButton {
+  gap: 8px;
+  background-color: #fdd835;
+  color: #2e2e2e;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.giveButton:hover {
+  background-color: #fbc02d;
+}
+
+.supportContent small {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #cccccc;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 80px;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 0 40px; /* <-- Added padding */
+}
+
+.footerColumn {
+  flex: 1;
+  min-width: 240px;
+}
+
+.footerColumn h4 {
+  color: #f3c766;
+  margin-bottom: 0.8rem;
+}
+
+.footerColumn ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerColumn ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footerColumn ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footerColumn ul li a:hover {
+  color: #f3c766;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.footerBottom {
+  margin-top: 40px;
+  text-align: center;
+  padding: 0 20px; /* Add horizontal padding on small screens */
+}
+
+.footerBottom hr {
+  border-color: #333;
+  margin-bottom: 10px;
+}
+
+.footerBottom p {
+  font-size: 0.9rem;
+  color: #bbbbbb;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .supportContent h2 {
+    font-size: 1.6rem;
+  }
+
+  .supportContent p {
+    font-size: 1rem;
+  }
+
+  .giveButton {
+    padding: 0.6rem 1.2rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 20px; /* Reduced padding for mobile */
+    margin-left: 0; /* Reset custom margin for mobile */
+  }
+
+  .footerColumn {
+    margin-bottom: 30px;
+  }
+
+  .footerBottom {
+    margin-top: 20px;
+  }
+}
