@@ -182,13 +182,26 @@
   .hero {
     height: auto;
     min-height: 100vh;
+    position: relative; /* ensure child overlay can position itself correctly */
     background-attachment: scroll;
   }
 
   .overlay {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    padding-top: 6rem; /* pushes content down safely on mobile */
+    justify-content: center;
+    padding-top: 6rem;
     padding-bottom: 2rem;
+    height: 100%;           /* ensures it stretches fully */
+    width: 100%;
+    position: absolute;     /* makes it stretch over .hero */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* optional if overlay has background */
+    z-index: 1;
   }
 
   .hero-content h1 {
@@ -209,5 +222,4 @@
     flex-direction: column;
     gap: 0.8rem;
   }
-
 }
