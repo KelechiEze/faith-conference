@@ -104,7 +104,8 @@ const FaithSpeakers = () => {
         <span><span className="dot" /> Be Renewed</span>
       </div>
 
-      <button className="register-button">Register Now</button>
+      <a href="#register" className="register-button">Register Now</a>
+
 
       {selectedSpeaker && (
         <div className="modal-overlay" onClick={closeModal}>
