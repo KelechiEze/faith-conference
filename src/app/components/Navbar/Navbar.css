@@ -73,7 +73,15 @@
 
 @media screen and (max-width: 800px) {
   .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     justify-content: space-between;
+    z-index: 1000;
+    min-height: 70px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .hamburger {
