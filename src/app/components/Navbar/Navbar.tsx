@@ -30,7 +30,7 @@ const Navbar = () => {
             <Image
               src="/favicon5.ico"
               alt="Faith Conference Logo"
-              width={80}
+              width={70}
               height={40}
               priority
             />
