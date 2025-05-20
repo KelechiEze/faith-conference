@@ -98,7 +98,7 @@ const HomeSection = () => {
           <h2 className="tagline"><em>&ldquo;Changing Your World!&rdquo;</em></h2>
 
           <div className="info">
-            <span><Calendar size={18} /> May 23–25, 2025</span>
+            <span><Calendar size={18} /> June 23–25, 2025</span>
             <span><Clock3 size={18} /> Daily Sessions: 9AM & 5PM</span>
             <span><MapPin size={18} /> Global Harvest Church, Lagos</span>
           </div>

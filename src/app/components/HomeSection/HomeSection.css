@@ -3,12 +3,11 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url('/faithbanner.jpg') center center / cover no-repeat;
-  background-attachment: fixed;
+  background: url('/desktopfaith.png') center center / cover no-repeat;
 }
 
 .overlay {
-  background-color:  rgba(0, 0, 0, 0.92);
+  background-color:  rgba(0, 0, 0, 0.84);
   width: 100%;
   height: 100%;
   display: flex;
@@ -184,6 +183,7 @@
     min-height: 100vh;
     position: relative; /* ensure child overlay can position itself correctly */
     background-attachment: scroll;
+    background: url('/mobileurl.jpg') center center / auto no-repeat;
   }
 
   .overlay {
@@ -200,7 +200,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.92); /* optional if overlay has background */
+    background: rgba(0, 0, 0, 0.83); /* optional if overlay has background */
     z-index: 1;
   }
 
