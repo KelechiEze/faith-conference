@@ -83,6 +83,7 @@ export default function FaithStoriesCarousel() {
 
   return (
     <section
+      id="stories"
       className="faith-carousel"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
