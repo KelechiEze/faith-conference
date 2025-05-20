@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import './FaithSpeakers.css';
+import Link from 'next/link';
 
 const speakers = [
   {
@@ -104,7 +105,7 @@ const FaithSpeakers = () => {
         <span><span className="dot" /> Be Renewed</span>
       </div>
 
-      <a href="#register" className="register-button">Register Now</a>
+      <Link href="#register" className="register-button">Register Now</Link>
 
 
       {selectedSpeaker && (
