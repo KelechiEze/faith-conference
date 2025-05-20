@@ -48,6 +48,10 @@
   color: #f6c744;
 }
 
+.speaker-avatar {
+  border-radius: 20px;
+}
+
 .speaker-bio {
   font-size: 0.9rem;
   color: #555;
