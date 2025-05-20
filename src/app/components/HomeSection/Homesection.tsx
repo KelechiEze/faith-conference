@@ -2,6 +2,7 @@
 
 import './HomeSection.css';
 import { Calendar, MapPin } from 'lucide-react';
+import Link from 'next/link';
 
 const HomeSection = () => {
   return (
@@ -17,7 +18,7 @@ const HomeSection = () => {
           </div>
 
           <div className="hero-buttons">
-            <button className="btn-register">Register Now</button>
+            <Link href="#register"><button className="btn-register">Register Now</button></Link>
             <button className="btn-schedule">View Schedule</button>
           </div>
 
