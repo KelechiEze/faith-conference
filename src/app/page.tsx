@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar/Navbar';
 import HomeSection from './components/HomeSection/Homesection';
+import CountdownTimer from './components/CountdownTimer/CountdownTimer';
 import FaithSection from './components/FaithSection/FaithSection';
 import FaithVerse from './components/FaithVerse/FaithVerse';
 import FaithStoriesCarousel from './components/FaithStoriesCarousel/FaithStoriesCarousel';
@@ -13,6 +14,7 @@ export default function Home() {
     <>
       <Navbar />
       <HomeSection />
+      <CountdownTimer />
       <FaithSection />
       <FaithVerse />
       <FaithStoriesCarousel />

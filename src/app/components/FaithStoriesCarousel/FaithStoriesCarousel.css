@@ -66,9 +66,19 @@
 }
 
 .carousel-author {
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
   color: #0c1033;
   font-weight: 600;
+}
+
+.author-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .arrow {

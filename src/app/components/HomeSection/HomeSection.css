@@ -7,7 +7,7 @@
 }
 
 .overlay {
-  background-color:  rgba(0, 0, 0, 0.84);
+  background-color:  rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
   display: flex;
@@ -200,7 +200,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.83); /* optional if overlay has background */
+    background: rgba(0, 0, 0, 0.75); /* optional if overlay has background */
     z-index: 1;
   }
 
