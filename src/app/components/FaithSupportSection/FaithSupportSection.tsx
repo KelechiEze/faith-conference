@@ -3,6 +3,8 @@
 import React from 'react';
 import Image from 'next/image';
 import './FaithSupportSection.css';
+import Link from 'next/link';
+
 import { Facebook, Instagram, Gift } from 'lucide-react';
 
 const FaithSupportSection = () => {
@@ -12,10 +14,10 @@ const FaithSupportSection = () => {
         <h2>Support The Faith Conference</h2>
         <p>Your generous giving helps us continue to bring life-changing faith teachings to people around the world.</p>
         <div className="underline" />
-        <button className="giveButton">
+       <Link href="https://www.gharvestisland.org/give/"> <button className="giveButton">
           <Gift size={18} style={{ marginRight: '8px' }} />
           Give now
-        </button>
+        </button></Link>
         <small>You will be redirected to the Global Harvest Church giving page</small>
       </div>
 
