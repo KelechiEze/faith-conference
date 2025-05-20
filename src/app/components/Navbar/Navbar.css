@@ -3,22 +3,17 @@
   justify-content: space-around;
   align-items: center;
   padding: 0.2rem 2rem;
-  position: fixed;
-  top: 0;
   width: 100%;
   z-index: 1000;
-  color: white;
+  color: black;
   backdrop-filter: blur(10px);
   transition: background-color 0.3s ease;
+
+  /* Removed fixed positioning so it scrolls with the page */
+  position: relative;
+  top: auto;
 }
 
-.navbar.scrolled .nav-links li a {
-  color: black;
-}
-
-.navbar.scrolled .hamburger {
-  color: black;
-}
 
 .nav-links {
   display: flex;
@@ -27,7 +22,7 @@
 }
 
 .nav-links li a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: 500;
   position: relative;
@@ -68,20 +63,21 @@
 .hamburger {
   display: none;
   cursor: pointer;
-  color: white;
+  color: black;
 }
 
 @media screen and (max-width: 800px) {
   .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     justify-content: space-between;
-    z-index: 1000;
     min-height: 70px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+
+    /* Make sure it scrolls with the page on small screens too */
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
   }
 
   .hamburger {
@@ -107,6 +103,10 @@
     overflow: hidden;
     visibility: hidden;
     transition: max-height 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+  }
+
+  .nav-links li a{
+    color: white;
   }
 
   .nav-links.active {
