@@ -104,7 +104,7 @@ const HomeSection = () => {
           </div>
 
           <div className="hero-buttons">
-            <Link href="register"><button className="btn-register">Register Now</button></Link>
+            <Link href="#register"><button className="btn-register">Register Now</button></Link>
             <button className="btn-schedule" disabled style={{ opacity: 0.5, cursor: 'not-allowed' }}>
               View Schedule
             </button>
